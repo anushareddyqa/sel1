@@ -23,7 +23,7 @@ public class StackOverflowLogin  extends Browser{
 	@BeforeTest
 	public  void beforeConfig() throws IOException{
 		Browser.getDriver();
-	//	driver.get(Utility.readConfigPropertiesFile("url"));
+
 		home = new HomePage(driver);
 	    login = new LoginPage(driver);
 	    driver.get(Utility.readConfigPropertiesFile("url"));
