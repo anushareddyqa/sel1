@@ -19,7 +19,7 @@ public class StackOverflowLogin  extends Browser{
 	
 	HomePage home;
 	LoginPage login;
-//	WebDriver driver;
+
 	@BeforeTest
 	public  void beforeConfig() throws IOException{
 		Browser.getDriver();
