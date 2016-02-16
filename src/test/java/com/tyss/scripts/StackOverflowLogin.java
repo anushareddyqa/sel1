@@ -23,7 +23,7 @@ public class StackOverflowLogin  extends Browser{
 	@BeforeTest
 	public  void beforeConfig() throws IOException{
 		Browser.getDriver();
-	//	driver.get(Utility.readConfigPropertiesFile("url"));
+
 		home = new HomePage(driver);
 	    login = new LoginPage(driver);
 	    driver.get(Utility.readConfigPropertiesFile("url"));
@@ -39,6 +39,7 @@ public class StackOverflowLogin  extends Browser{
 	@AfterTest
 	public void tearDown() throws InterruptedException{
 		Thread.sleep(5000);
+		//qbout to quit
 		driver.quit();
 	}
 
